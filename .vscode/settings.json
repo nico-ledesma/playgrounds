@@ -1,0 +1,6 @@
+{
+	"editor.formatOnSave": true,
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"prettier.requireConfig": true, // Only run Prettier if the repo has a Prettier config file
+	"js/ts.format.enabled": false // Disable VS Code’s built-in JavaScript/TypeScript formatter
+}
