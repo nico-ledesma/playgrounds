@@ -3,8 +3,8 @@ import { print } from '../utils/print.js';
 
 const validate = (payload, schema) => {
 	try {
-		schema.parse(payload);
-		print(`✅ Validation OK`);
+		const result = schema.parse(payload);
+		print(`✅ Validation OK \n`, result);
 	} catch (error) {
 		if (error instanceof ZodError) {
 			const issues = JSON.stringify(error.issues, null, 2);
